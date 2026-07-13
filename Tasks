@@ -580,3 +580,98 @@ Hospital Block:C Block
 Hospital Patientcounting:5 person's
 Hospital Patientage:20 to 30
 Hospital catagery:Accient Emergency
+package Encapsulationtask;
+//Task No:7.
+//A product inventory system should store product price privately.
+public class Inventorysystemtask {
+	private String CPName;
+	private String CPCapacity;
+	private String BrandName;
+	private long   price;
+	
+
+	public String getCPName() {
+		return CPName;
+	}
+
+
+	public void setCPName(String cPName) {
+		CPName = cPName;
+	}
+
+
+	public String getCPCapacity() {
+		return CPCapacity;
+	}
+
+
+	public void setCPCapacity(String cPCapacity) {
+		CPCapacity = cPCapacity;
+	}
+
+
+	public String getBrandName() {
+		return BrandName;
+	}
+
+
+	public void setBrandName(String brandName) {
+		BrandName = brandName;
+	}
+
+
+	public long getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(long price) {
+		this.price = price;
+	}
+
+
+	public static void main(String[] args) {
+		Inventorysystemtask i=new Inventorysystemtask();
+		i.setCPName("Dell");
+		i.setBrandName("Latitude 5520");
+		i.setCPCapacity("Intel Core i5-1235U");
+		i.setPrice(50000L);
+		System.out.println("CP Name:"+i.getCPName());
+		System.out.println("CP BrandName:"+i.getBrandName());
+		System.out.println("CP Capacity:"+i.getCPCapacity());
+		System.out.println("CP Price:"+i.getPrice());
+		Inventorysystemtask i1=new Inventorysystemtask();
+		i1.setCPName("Leanovo");
+		i1.setBrandName("Intel Core Ultra");
+		i1.setCPCapacity("512 GB or 1 TB NVMe SSD");
+		i1.setPrice(55000L);
+		System.out.println("CP Name:"+i1.getCPName());
+		System.out.println("CP BrandName:"+i1.getBrandName());
+		System.out.println("CP Capacity:"+i1.getCPCapacity());
+		System.out.println("CP Price:"+i1.getPrice());
+		Inventorysystemtask i2=new Inventorysystemtask();
+		i2.setCPName("HP");
+		i2.setBrandName("Intel Core i3/i5/i7");
+		i2.setCPCapacity("512 GB SSD (common) or 1 TB SSD in");
+		i2.setPrice(65500L);
+		System.out.println("CP Name:"+i2.getCPName());
+		System.out.println("CP BrandName:"+i2.getBrandName());
+		System.out.println("CP Capacity:"+i2.getCPCapacity());
+		System.out.println("CP Price:"+i2.getPrice());
+		
+
+	}
+
+}
+(OUTPUT)=>CP Name:Dell
+CP BrandName:Latitude 5520
+CP Capacity:Intel Core i5-1235U
+CP Price:50000
+CP Name:Leanovo
+CP BrandName:Intel Core Ultra
+CP Capacity:512 GB or 1 TB NVMe SSD
+CP Price:55000
+CP Name:HP
+CP BrandName:Intel Core i3/i5/i7
+CP Capacity:512 GB SSD (common) or 1 TB SSD in
+CP Price:65500.

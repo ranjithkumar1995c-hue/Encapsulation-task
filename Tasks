@@ -342,3 +342,111 @@ Mobilename:Vivo Y11 5G
 MobileBrand:Y18i Andriod version(18)
 Mobilecapacity:4GB RAM
 Mobileprice:25000.
+package Encapsulationtask;
+//Task No:5.
+//A car showroom should ensure price details are accessed only through methods.
+
+public class CarShowroomtask {
+	private String CarName;
+	private String CarBrand;
+	private String Capacity;
+	private long   price;
+	
+	
+
+	public String getCarName() {
+		return CarName;
+	}
+
+
+
+	public void setCarName(String carName) {
+		CarName = carName;
+	}
+
+
+
+	public String getCarBrand() {
+		return CarBrand;
+	}
+
+
+
+	public void setCarBrand(String carBrand) {
+		CarBrand = carBrand;
+	}
+
+
+
+	public String getCapacity() {
+		return Capacity;
+	}
+
+
+
+	public void setCapacity(String capacity) {
+		Capacity = capacity;
+	}
+
+
+
+	public long getPrice() {
+		return price;
+	}
+
+
+
+	public void setPrice(long price) {
+		this.price = price;
+	}
+
+
+
+	public static void main(String[] args) {
+		CarShowroomtask c=new CarShowroomtask();
+		c.setCarName("Tata Sierra");
+		c.setCarBrand("Sierra");
+		c.setCapacity("90km");
+		c.setPrice(120000L);
+		System.out.println("Car Name:"+c.getCarName());
+		System.out.println("Car Barand Name:"+c.getCarBrand());
+		System.out.println("Car capacity:"+c.getCapacity());
+		System.out.println("Car price:"+c.getPrice());
+		
+		CarShowroomtask c1=new CarShowroomtask();
+		c1.setCarName("Maruthi Suzuki");
+		c1.setCarBrand("Suzuki");
+		c1.setCapacity("95km");
+		c1.setPrice(130000L);
+		
+		System.out.println("Car Name:"+c1.getCarName());
+		System.out.println("Car Barand Name:"+c1.getCarBrand());
+		System.out.println("Car capacity:"+c1.getCapacity());
+		System.out.println("Car price:"+c1.getPrice());
+		CarShowroomtask c2=new CarShowroomtask();
+		c2.setCarName("Hyundai Creta");
+		c2.setCarBrand("Hyundai");
+		c2.setCapacity("95.5km");
+		c2.setPrice(110000L);
+		System.out.println("Car Name:"+c2.getCarName());
+		System.out.println("Car Barand Name:"+c2.getCarBrand());
+		System.out.println("Car capacity:"+c2.getCapacity());
+		System.out.println("Car price:"+c2.getPrice());
+		
+ 
+	}
+
+}
+(OUTPUT)=>
+Car Name:Tata Sierra
+Car Barand Name:Sierra
+Car capacity:90km
+Car price:120000
+Car Name:Maruthi Suzuki
+Car Barand Name:Suzuki
+Car capacity:95km
+Car price:130000
+Car Name:Hyundai Creta
+Car Barand Name:Hyundai
+Car capacity:95.5km
+Car price:110000.

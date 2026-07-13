@@ -911,3 +911,100 @@ Laptop Passwordfetures:BIOS password.
 Laptop Booter features:Secure Boot.
 Laptop Capacity features:TPM 2.0.
 Laptop Software features:Windows administrator controls to restrict software installation and system changes
+package Encapsulationtask;
+//Task No:10.
+//A person information system should protect personal details.
+
+public class Personpersonaldetails {
+	private String APersonName;
+	private String Work;
+	private long Age;
+	private String Habit;
+	
+
+	public String getAPersonName() {
+		return APersonName;
+	}
+
+
+	public void setAPersonName(String aPersonName) {
+		APersonName = aPersonName;
+	}
+
+
+	public String getWork() {
+		return Work;
+	}
+
+
+	public void setWork(String work) {
+		Work = work;
+	}
+
+
+	public long getAge() {
+		return Age;
+	}
+
+
+	public void setAge(long age) {
+		Age = age;
+	}
+
+
+	public String getHabit() {
+		return Habit;
+	}
+
+
+	public void setHabit(String habit) {
+		Habit = habit;
+	}
+
+
+	public static void main(String[] args) {
+		Personpersonaldetails p=new Personpersonaldetails();
+		p.setAPersonName("Sachin Ramesh Tendulkar");
+		p.setAge(53);
+		p.setWork("Cricketplayer");
+		p.setHabit("playing cricket");
+		System.out.println("A Person Name:"+p.getAPersonName());
+		System.out.println("A Person Age:"+p.getAge());
+		System.out.println("A Person work:"+p.getWork());
+		System.out.println("A Person Habit:"+p.getHabit());
+		
+		Personpersonaldetails p1=new Personpersonaldetails();
+		p1.setAPersonName("A.R.Rahman");
+		p1.setAge(55);
+		p1.setWork("Music Storm");
+		p1.setHabit("Music playing");
+		System.out.println("A Person Name:"+p1.getAPersonName());
+		System.out.println("A Person Age:"+p1.getAge());
+		System.out.println("A Person work:"+p1.getWork());
+		System.out.println("A Person Habit:"+p1.getHabit());	
+		Personpersonaldetails p2=new Personpersonaldetails();
+		p2.setAPersonName("Rajinikanth.");
+		p2.setAge(77L);
+		p2.setWork("Actor(Super star).");
+		p2.setHabit("Reading Tamil Noval book.");
+		System.out.println("A Person Name:"+p2.getAPersonName());
+		System.out.println("A Person Age:"+p2.getAge());
+		System.out.println("A Person work:"+p2.getWork());
+		System.out.println("A Person Habit:"+p2.getHabit());	
+
+		
+		
+		
+}}
+(OUTPUT)=>A Person Name:Sachin Ramesh Tendulkar
+A Person Age:53
+A Person work:Cricketplayer
+A Person Habit:playing cricket
+A Person Name:A.R.Rahman
+A Person Age:55
+A Person work:Music Storm
+A Person Habit:Music playing
+A Person Name:Rajinikanth.
+A Person Age:77
+A Person work:Actor(Super star).
+A Person Habit:Reading Tamil Noval book.

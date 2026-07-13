@@ -234,3 +234,111 @@ Employee Salary:20000
 Employeename:Guna
 EmployeeDesignation:Labour
 Employee Salary:10000.
+
+package Encapsulationtask;
+//Task No:4.
+//A mobile inventory system should prevent direct modification of mobile price.
+public class Mobiletask {
+	private String Mobilename;
+	private String MobileBrand;
+	private Long   Mobileprice;
+	private String Mobilecapacity;
+	
+
+	public String getMobilename() {
+		return Mobilename;
+	}
+
+
+	public void setMobilename(String mobilename) {
+		Mobilename = mobilename;
+	}
+
+
+	public String getMobileBrand() {
+		return MobileBrand;
+	}
+
+
+	public void setMobileBrand(String mobileBrand) {
+		MobileBrand = mobileBrand;
+	}
+
+
+	public long getMobileprice() {
+		return Mobileprice;
+	}
+
+
+	public void setMobileprice(long mobileprice) {
+		Mobileprice = mobileprice;
+	}
+public void setMobileprice(Long mobileprice) {
+		Mobileprice = mobileprice;
+	}
+
+public void setMobilecapacity(String mobilecapacity) {
+	Mobilecapacity = mobilecapacity;
+}
+
+	public String getMobilecapacity() {
+	return Mobilecapacity;
+}
+
+
+	public void getMobilecapacity(String mobilecapacity) {
+		Mobilecapacity = mobilecapacity;
+	}
+	
+
+
+
+	
+
+
+	public static void main(String[] args) {
+		Mobiletask m=new Mobiletask();
+		m.setMobilename("Vivo Y18i");
+		m.setMobileBrand("Y18i Andriod version(14)");
+		m.setMobilecapacity("8GB RAM");
+		m.setMobileprice(15500L);
+		Mobiletask mm=new Mobiletask();
+		mm.setMobilename("Vivo Y05");
+		mm.setMobileBrand("Y18i Andriod version(16)");
+		mm.setMobilecapacity("4GB RAM");
+		mm.setMobileprice(18000L);
+		Mobiletask tt=new Mobiletask();
+		tt.setMobilename("Vivo Y11 5G");
+		tt.setMobileBrand("Y18i Andriod version(18)");
+		tt.setMobilecapacity("4GB RAM");
+		tt.setMobileprice(25000L);
+		System.out.println("Mobilename:"+m.getMobilename());
+		System.out.println("MobileBrand:"+m.getMobileBrand());
+		System.out.println("Mobilecapacity:"+m.getMobilecapacity());
+		System.out.println("Mobileprice:"+m.getMobileprice());
+		System.out.println("Mobilename:"+mm.getMobilename());
+		System.out.println("MobileBrand:"+mm.getMobileBrand());
+		System.out.println("Mobilecapacity:"+mm.getMobilecapacity());
+		System.out.println("Mobileprice:"+mm.getMobileprice());
+		System.out.println("Mobilename:"+tt.getMobilename());
+		System.out.println("MobileBrand:"+tt.getMobileBrand());
+		System.out.println("Mobilecapacity:"+tt.getMobilecapacity());
+		System.out.println("Mobileprice:"+tt.getMobileprice());
+
+
+	}
+
+}
+(OUTPUT)=>
+Mobilename:Vivo Y18i
+MobileBrand:Y18i Andriod version(14)
+Mobilecapacity:8GB RAM
+Mobileprice:15500
+Mobilename:Vivo Y05
+MobileBrand:Y18i Andriod version(16)
+Mobilecapacity:4GB RAM
+Mobileprice:18000
+Mobilename:Vivo Y11 5G
+MobileBrand:Y18i Andriod version(18)
+Mobilecapacity:4GB RAM
+Mobileprice:25000.

@@ -60,3 +60,94 @@ Account Balance:50000.0
 	
 }}
 
+package Encapsulationtask;
+//Task No:1.
+//A student system must protect student details such as marks using private variables.
+public class Studentdetailstask {
+	private long RollNo;
+	private String name;
+	private String Subject;
+	private long marks;
+	private long Total;
+	
+	
+	
+	public long getTotal() {
+		return Total;
+	}
+
+	public void setTotal(long total) {
+		Total = total;
+	}
+
+	public long getRollNo() {
+		return RollNo;
+	}
+
+	public void setRollNo(long rollNo) {
+		RollNo = rollNo;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getSubject() {
+		return Subject;
+	}
+
+	public void setSubject(String subject) {
+		Subject = subject;
+	}
+
+	public long getMarks() {
+		return marks;
+	}
+
+	public void setMarks(long marks) {
+		this.marks = marks;
+	}
+
+	
+
+	public static void main(String[] args) {
+		Studentdetailstask st=new Studentdetailstask();
+		st.setRollNo(13096L);
+		st.setName("ranjith");
+		st.setSubject("java");
+		st.setMarks(86L);
+		Studentdetailstask s=new Studentdetailstask();
+		s.setSubject("Python");
+		s.setMarks(88L);
+		Studentdetailstask ss=new Studentdetailstask();
+		ss.setSubject("Webdesigning");
+		ss.setMarks(92L);
+		Studentdetailstask t=new Studentdetailstask();
+		t.setTotal(88+92+86);
+		
+		
+		System.out.println("Student Roll No:"+st.getRollNo());
+		System.out.println("Student Name:"+st.getName());
+		System.out.println("Student Subject:"+st.getSubject());
+		System.out.println("Student Subject:"+s.getSubject());
+		System.out.println("Student Subject:"+ss.getSubject());
+		System.out.println("Student java Marks:"+st.getMarks());
+		System.out.println("Student python Marks:"+s.getMarks());
+		System.out.println("Student webdesigning Marks:"+ss.getMarks());
+		System.out.println("Student Overall Total Marks:"+t.getTotal());
+	}
+
+}
+(OUTPUT)=>Student Roll No:13096
+Student Name:ranjith
+Student Subject:java
+Student Subject:Python
+Student Subject:Webdesigning
+Student java Marks:86
+Student python Marks:88
+Student webdesigning Marks:92
+Student Overall Total Marks:266

@@ -151,3 +151,86 @@ Student java Marks:86
 Student python Marks:88
 Student webdesigning Marks:92
 Student Overall Total Marks:266
+package Encapsulationtask;
+// Task No:3
+//An employee payroll system should protect salary information.
+public class Employeepayrolltask {
+	private  String Name;
+	private  String Designation;
+	private long Salary;
+	public String getDesignation() {
+		return Designation;
+	}
+
+
+	public void setDesignation(String designation) {
+		Designation = designation;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+  public long getSalary() {
+		return Salary;
+	}
+
+
+	public void setSalary(long salary) {
+		Salary = salary;
+	}
+
+
+	public static void main(String[] args) {
+		Employeepayrolltask em=new Employeepayrolltask();
+		em.setName("Ramu");
+		em.setDesignation("Manager");
+		em.setSalary(50000L);
+		Employeepayrolltask e=new Employeepayrolltask();
+		e.setName("Samy");
+		e.setDesignation("Assitant Manager");
+		e.setSalary(35000L);
+		
+		Employeepayrolltask tt=new Employeepayrolltask();
+		tt.setName("Devi");
+		tt.setDesignation("Accountant");
+		tt.setSalary(20000L);
+		Employeepayrolltask ll=new Employeepayrolltask();
+		ll.setName("Guna");
+		ll.setDesignation("Labour");
+		ll.setSalary(10000L);
+		
+		System.out.println("Employeename:"+em.getName());
+		System.out.println("EmployeeDesignation:"+em.getDesignation());
+		System.out.println("Employee Salary:"+em.getSalary());
+		System.out.println("Employeename:"+e.getName());
+		System.out.println("EmployeeDesignation:"+e.getDesignation());
+		System.out.println("Employee Salary:"+e.getSalary());
+		System.out.println("Employeename:"+tt.getName());
+		System.out.println("EmployeeDesignation:"+tt.getDesignation());
+		System.out.println("Employee Salary:"+tt.getSalary());
+		System.out.println("Employeename:"+ll.getName());
+		System.out.println("EmployeeDesignation:"+ll.getDesignation());
+		System.out.println("Employee Salary:"+ll.getSalary());
+
+	}
+
+}
+(OUTPUT)=>
+Employeename:Ramu
+EmployeeDesignation:Manager
+Employee Salary:50000
+Employeename:Samy
+EmployeeDesignation:Assitant Manager
+Employee Salary:35000
+Employeename:Devi
+EmployeeDesignation:Accountant
+Employee Salary:20000
+Employeename:Guna
+EmployeeDesignation:Labour
+Employee Salary:10000.

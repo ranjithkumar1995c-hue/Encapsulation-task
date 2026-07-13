@@ -450,3 +450,133 @@ Car Name:Hyundai Creta
 Car Barand Name:Hyundai
 Car capacity:95.5km
 Car price:110000.
+package Encapsulationtask;
+//Task No:6
+//A hospital system should protect patient information.
+
+public class Hospitalsystemtask {
+	private String HospitalName;
+    private String HospitalBlock;
+	private String patientcount;
+	private String patientage;
+	private String catagory;
+	public String setPatientage() {
+		return patientage;
+	}
+	public String getPatientage() {
+		return patientage;
+	}
+	
+	
+
+	public String getCatagory() {
+		return catagory;
+	}
+
+
+
+	public void setPatientage(String patientage) {
+		this.patientage = patientage;
+	}
+	public void getPatientage(String patientage) {
+		this.patientage = patientage;
+	}
+
+
+
+	public void setCatagory(String catagory) {
+		this.catagory = catagory;
+	}
+
+
+
+	public String getHospitalName() {
+		return HospitalName;
+	}
+
+
+
+	public void setHospitalName(String hospitalName) {
+		HospitalName = hospitalName;
+	}
+
+
+
+	public String getHospitalBlock() {
+		return HospitalBlock;
+	}
+
+
+
+	public void setHospitalBlock(String hospitalBlock) {
+		HospitalBlock = hospitalBlock;
+	}
+
+
+
+	public String getPatientcount() {
+		return patientcount;
+	}
+
+
+
+	public void setPatientcount(String patientcount) {
+		this.patientcount = patientcount;
+	}
+
+
+
+	   public static void main(String[] args) {
+		Hospitalsystemtask h=new Hospitalsystemtask();
+		h.setHospitalName("Kavury Hospital");
+		h.setHospitalBlock("A Block");
+		h.setPatientcount("26 person");
+		h.setPatientage("25 to 34");
+		h.setCatagory("op Normal");
+		
+		System.out.println("Hospital Name:"+h.getHospitalName());
+		System.out.println("Hospital Block:"+h.getHospitalBlock());
+		System.out.println("Hospital Patientcounting:"+h.getPatientcount());
+		System.out.println("Hospital Patientage:"+h.getPatientage());
+		System.out.println("Hospital catagery:"+h.getCatagory());
+		Hospitalsystemtask h1=new Hospitalsystemtask();
+		h1.setHospitalName("Kavury Hospital");
+		h1.setHospitalBlock("B Block");
+		h1.setPatientcount("15 person");
+		h1.setPatientage("45 to 56");
+		h1.setCatagory("Lung's Emergency");
+		System.out.println("Hospital Name:"+h1.getHospitalName());
+		System.out.println("Hospital Block:"+h1.getHospitalBlock());
+		System.out.println("Hospital Patientcounting:"+h1.getPatientcount());
+		System.out.println("Hospital Patientage:"+h1.getPatientage());
+		System.out.println("Hospital catagery:"+h1.getCatagory());
+		Hospitalsystemtask h2=new Hospitalsystemtask();
+		h2.setHospitalName("Kavury Hospital");
+		h2.setHospitalBlock("C Block");
+		h2.setPatientcount("5 person's");
+		h2.setPatientage("20 to 30");
+		h2.setCatagory("Accient Emergency");
+		System.out.println("Hospital Name:"+h2.getHospitalName());
+		System.out.println("Hospital Block:"+h2.getHospitalBlock());
+		System.out.println("Hospital Patientcounting:"+h2.getPatientcount());
+		System.out.println("Hospital Patientage:"+h2.getPatientage());
+		System.out.println("Hospital catagery:"+h2.getCatagory());
+
+	}
+
+}
+(OUTPUT)=>Hospital Name:Kavury Hospital
+Hospital Block:A Block
+Hospital Patientcounting:26 person
+Hospital Patientage:25 to 34
+Hospital catagery:op Normal
+Hospital Name:Kavury Hospital
+Hospital Block:B Block
+Hospital Patientcounting:15 person
+Hospital Patientage:45 to 56
+Hospital catagery:Lung's Emergency
+Hospital Name:Kavury Hospital
+Hospital Block:C Block
+Hospital Patientcounting:5 person's
+Hospital Patientage:20 to 30
+Hospital catagery:Accient Emergency

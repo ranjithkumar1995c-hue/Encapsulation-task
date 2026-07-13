@@ -675,3 +675,122 @@ CP Name:HP
 CP BrandName:Intel Core i3/i5/i7
 CP Capacity:512 GB SSD (common) or 1 TB SSD in
 CP Price:65500.
+package Encapsulationtask;
+//Task No:8
+//A library system should protect the number of books available.
+public class LibararySystemtask {
+	private String BookName;
+	private String BookRackNo;
+	private long   Bookcount;
+	private String Neworder;
+	private String Author;
+	
+
+	public String getBookName() {
+		return BookName;
+	}
+
+
+	public String getAuthor() {
+		return Author;
+	}
+
+
+	public void setAuthor(String author) {
+		Author = author;
+	}
+
+
+	public void setBookName(String bookName) {
+		BookName = bookName;
+	}
+
+
+	public String getBookRackNo() {
+		return BookRackNo;
+	}
+
+
+	public void setBookRackNo(String bookRackNo) {
+		BookRackNo = bookRackNo;
+	}
+
+
+	public long getBookcount() {
+		return Bookcount;
+	}
+
+
+	public void setBookcount(long bookcount) {
+		Bookcount = bookcount;
+	}
+
+
+	public String getNeworder() {
+		return Neworder;
+	}
+
+
+	public void setNeworder(String neworder) {
+		Neworder = neworder;
+	}
+
+
+	public static void main(String[] args) {
+		LibararySystemtask l=new LibararySystemtask();
+		l.setBookName("Poniyenselven");
+		l.setBookRackNo("1-Rack");
+		l.setBookcount(12L);
+		l.setNeworder("5");
+		l.setAuthor("Kalki");
+		System.out.println("The BookName:"+l.getBookName());
+		System.out.println("The BookRack:"+l.getBookRackNo());
+		System.out.println("The Bookcount:"+l.getBookcount());
+		System.out.println("The BookNeworder:"+l.getNeworder());
+		System.out.println("The BookAuthor:"+l.getAuthor());
+		LibararySystemtask l1=new LibararySystemtask();
+		l1.setBookName("Sivagamiyin Sabatham");
+		l1.setBookRackNo("3-Rack");
+		l1.setBookcount(13);
+		l1.setNeworder("2");
+		l1.setAuthor("Kalkikrishnamoorthi");
+		System.out.println("The BookName:"+l1.getBookName());
+		System.out.println("The BookRack:"+l1.getBookRackNo());
+		System.out.println("The Bookcount:"+l1.getBookcount());
+		System.out.println("The BookNeworder:"+l1.getNeworder());
+		System.out.println("The BookAuthor:"+l1.getAuthor());
+		LibararySystemtask l2=new LibararySystemtask();
+		l2.setBookName("Parthiban Kanavu");
+		l2.setBookRackNo("2-Rack");
+		l2.setBookcount(7);
+		l2.setNeworder("4");
+		l2.setAuthor("Kalkikrishnamoorthi");
+		System.out.println("The BookName:"+l2.getBookName());
+		System.out.println("The BookRack:"+l2.getBookRackNo());
+		System.out.println("The Bookcount:"+l2.getBookcount());
+		System.out.println("The BookNeworder:"+l2.getNeworder());
+		System.out.println("The BookAuthor:"+l2.getAuthor());
+		
+		
+		
+		
+
+	}
+
+}
+(OUTPUT)=>
+The BookName:Poniyenselven
+The BookRack:1-Rack
+The Bookcount:12
+The BookNeworder:5
+The BookAuthor:Kalki
+The BookName:Sivagamiyin Sabatham
+The BookRack:3-Rack
+The Bookcount:13
+The BookNeworder:2
+The BookAuthor:Kalkikrishnamoorthi
+The BookName:Parthiban Kanavu
+The BookRack:2-Rack
+The Bookcount:7
+The BookNeworder:4
+The BookAuthor:Kalkikrishnamoorthi.

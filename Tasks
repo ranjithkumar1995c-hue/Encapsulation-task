@@ -794,3 +794,120 @@ The BookRack:2-Rack
 The Bookcount:7
 The BookNeworder:4
 The BookAuthor:Kalkikrishnamoorthi.
+package Encapsulationtask;
+// Task No:9
+//A laptop store should restrict modification of product specifications.
+public class Laptopstoretask {
+	private String LaptopName;
+	private String Laptoppassword;
+	private String LaptopBoot;
+	private String Laptopcapacity;
+	private String Laptopsoftware;
+	
+
+	public String getLaptopName() {
+		return LaptopName;
+	}
+
+
+	public void setLaptopName(String laptopName) {
+		LaptopName = laptopName;
+	}
+
+
+	public String getLaptoppassword() {
+		return Laptoppassword;
+	}
+
+
+	public void setLaptoppassword(String laptoppassword) {
+		Laptoppassword = laptoppassword;
+	}
+
+
+	public String getLaptopBoot() {
+		return LaptopBoot;
+	}
+
+
+	public void setLaptopBoot(String laptopBoot) {
+		LaptopBoot = laptopBoot;
+	}
+
+
+	public String getLaptopcapacity() {
+		return Laptopcapacity;
+	}
+
+
+	public void setLaptopcapacity(String laptopcapacity) {
+		Laptopcapacity = laptopcapacity;
+	}
+
+
+	public String getLaptopsoftware() {
+		return Laptopsoftware;
+	}
+
+
+	public void setLaptopsoftware(String laptopsoftware) {
+		Laptopsoftware = laptopsoftware;
+	}
+
+
+	public static void main(String[] args) {
+		Laptopstoretask n=new Laptopstoretask();
+		n.setLaptopName("Lenovo ThinkPad E14 Gen 6.");
+		n.setLaptoppassword("BIOS/UEFI password.");
+		n.setLaptopBoot("Secure Boot.");
+		n.setLaptopcapacity("TPM 2.0.");
+		n.setLaptopsoftware("fingerprint reader, Windows user permissions to prevent software and settings changes");
+		System.out.println("Laptop Name:"+n.getLaptopName());
+		System.out.println("Laptop Passwordfetures:"+n.getLaptoppassword());
+		System.out.println("Laptop Booter features:"+n.getLaptopBoot());
+		System.out.println("Laptop Capacity features:"+n.getLaptopcapacity());
+		System.out.println("Laptop Software features:"+n.getLaptopsoftware());
+		Laptopstoretask n1=new Laptopstoretask();
+		n1.setLaptopName("Dell Latitude 5450.");
+		n1.setLaptoppassword("BIOS administrator password.");
+		n1.setLaptopBoot("Secure Boot.");
+		n1.setLaptopcapacity("TPM 2.0.");
+		n1.setLaptopsoftware("Dell BIOS security settings, Windows Group Policy to restrict system modifications");
+		System.out.println("Laptop Name:"+n1.getLaptopName());
+		System.out.println("Laptop Passwordfetures:"+n1.getLaptoppassword());
+		System.out.println("Laptop Booter features:"+n1.getLaptopBoot());
+		System.out.println("Laptop Capacity features:"+n1.getLaptopcapacity());
+		System.out.println("Laptop Software features:"+n1.getLaptopsoftware());
+
+		Laptopstoretask n2=new Laptopstoretask();
+		n2.setLaptopName("HP ProBook 440 G11.");
+		n2.setLaptoppassword("BIOS password.");
+		n2.setLaptopBoot("Secure Boot.");
+		n2.setLaptopcapacity("TPM 2.0.");
+		n2.setLaptopsoftware("Windows administrator controls to restrict software installation and system changes");
+		
+		System.out.println("Laptop Name:"+n2.getLaptopName());
+		System.out.println("Laptop Passwordfetures:"+n2.getLaptoppassword());
+		System.out.println("Laptop Booter features:"+n2.getLaptopBoot());
+		System.out.println("Laptop Capacity features:"+n2.getLaptopcapacity());
+		System.out.println("Laptop Software features:"+n2.getLaptopsoftware());
+	
+	
+	
+	}}
+(OUTPUT)=>
+Laptop Name:Lenovo ThinkPad E14 Gen 6.
+Laptop Passwordfetures:BIOS/UEFI password.
+Laptop Booter features:Secure Boot.
+Laptop Capacity features:TPM 2.0.
+Laptop Software features:fingerprint reader, Windows user permissions to prevent software and settings changes
+Laptop Name:Dell Latitude 5450.
+Laptop Passwordfetures:BIOS administrator password.
+Laptop Booter features:Secure Boot.
+Laptop Capacity features:TPM 2.0.
+Laptop Software features:Dell BIOS security settings, Windows Group Policy to restrict system modifications
+Laptop Name:HP ProBook 440 G11.
+Laptop Passwordfetures:BIOS password.
+Laptop Booter features:Secure Boot.
+Laptop Capacity features:TPM 2.0.
+Laptop Software features:Windows administrator controls to restrict software installation and system changes

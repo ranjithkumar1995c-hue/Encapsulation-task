@@ -1,1 +1,62 @@
+package Encapsulationtask;
+// Task No:2
+//In a bank application, the balance must not be accessed directly.
+public class Encapsulationtask {
+	private long Acno;
+	private String name;
+	private float balance;
+	
+	
+
+//	public static void main(String[] args) {
+		
+
+	
+
+
+	public long getAcno() {
+		return Acno;
+	}
+
+
+	public void setAcno(long acno) {
+		Acno = acno;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public float getBalance() {
+		return balance;
+	}
+
+
+	public void setBalance(float balance) {
+		this.balance = balance;
+	}
+
+
+public static void main(String[] args) {
+	Encapsulationtask en=new Encapsulationtask();
+	en.setAcno(762907627668L);
+	en.setName("Ranjith");
+	en.setBalance(50000f);
+	System.out.println("Account number:"+en.getAcno());
+	System.out.println("Account Holder Name:"+en.getName());
+	System.out.println("Account Balance:"+en.balance);
+
+(OUTPUT)=>Account number:762907627668
+Account Holder Name:Ranjith
+Account Balance:50000.0
+	
+	
+}}
 
